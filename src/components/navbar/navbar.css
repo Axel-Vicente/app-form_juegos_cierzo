@@ -47,6 +47,13 @@
     cursor: pointer;
 }
 
+.cierzo-games__navbar-links_container a,
+.cierzo-games__navbar-sign a,
+.cierzo-games__navbar-menu_container a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .cierzo-games__navbar-sign button,
 .cierzo-games__navbar-menu_container button {
     flex: 1 1 auto;
@@ -58,6 +65,7 @@
     text-shadow: 1px 1px 3px #666666;
     background: linear-gradient(to right, #ffa66e 0%, #ff4820 51%, #ffa66e 100%);
     font-weight: 500;
+    font-size: 15px;
     transition: 0.5s;
     background-size: 200% auto;
     left: 1153px;
@@ -107,7 +115,7 @@
 }
 
 .cierzo-games__navbar-menu_container p {
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 .cierzo-games__navbar-menu_container-links-sign {
@@ -146,4 +154,24 @@
     .cierzo-games__navbar-menu_container-links-sign {
         display: block;
     }
+}
+
+.cierzo-games__navbar-links_container p a::after,
+.cierzo-games__navbar-menu_container-links p a::after {
+    content: "";
+    width: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--color-underline);
+    display: block;
+    transition: width 0.3s ease-in-out, left 0.5s ease-in-out;
+    margin: 0 auto;
+}
+
+.cierzo-games__navbar-links_container p.active a::after,
+.cierzo-games__navbar-links_container p a:hover::after,
+.cierzo-games__navbar-menu_container-links p.active a::after,
+.cierzo-games__navbar-menu_container-links p a:hover::after {
+    width: 100%;
 }

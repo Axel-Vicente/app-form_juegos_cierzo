@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
+import { VscAccount } from "react-icons/vsc";
 import './navbar.css';
 import logo from '../../assets/exampleLogo.jfif'
 
-const Menu = () => (
-  <>
-    <p><a href='#home'>home</a></p>
-    <p><a href='#home'>home</a></p>
-    <p><a href='#home'>home</a></p>
-    <p><a href='#home'>home</a></p>
-  </>
-)
+function setDocumentTitle(title) {
+  document.title = title;
+}
 
 const Navbar = () => {
+  setDocumentTitle('Juegos del cierzo');
+
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [activeLink, setActiveLink] = useState('Home');
+  const handleLinkClick = (event, linkName) => {
+    event.preventDefault();
+    setActiveLink(linkName);
+    window.location.href = event.target.href;
+  };
 
   return (
     <div className='cierzo-games__navbar'>
@@ -22,11 +26,14 @@ const Navbar = () => {
           <img src={logo} alt='logo' />
         </div>
         <div className='cierzo-games__navbar-links_container'>
-          <Menu />
+          <p className={activeLink === 'Home' ? 'active' : ''}><a href='#home' onClick={(event) => handleLinkClick(event, 'Home')}>home</a></p>
+          <p className={activeLink === 'Home2' ? 'active' : ''}><a href='#home2' onClick={(event) => handleLinkClick(event, 'Home2')}>home2</a></p>
+          <p className={activeLink === 'Home3' ? 'active' : ''}><a href='#home3' onClick={(event) => handleLinkClick(event, 'Home3')}>home3</a></p>
+          <p className={activeLink === 'Home4' ? 'active' : ''}><a href='#home4' onClick={(event) => handleLinkClick(event, 'Home4')}>home4</a></p>
         </div>
       </div>
       <div className='cierzo-games__navbar-sign'>
-        <button type='button'>iniciar sesion</button>
+        <button type='button'><VscAccount color="#fff" size={20} /> login</button>
       </div>
       <div className='cierzo-games__navbar-menu'>
         {toggleMenu
@@ -34,13 +41,16 @@ const Navbar = () => {
           : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />
         }
         {toggleMenu && (
-          <div className='cierzo-games__navbar-menu_container scale-up-center'>
+          <div className="cierzo-games__navbar-menu_container scale-up-center">
             <div className='cierzo-games__navbar-menu_container-links'>
-              <Menu />
+              <p className={activeLink === 'Home' ? 'active' : ''}><a href='#home' onClick={(event) => handleLinkClick(event, 'Home')}>home</a></p>
+              <p className={activeLink === 'Home2' ? 'active' : ''}><a href='#home2' onClick={(event) => handleLinkClick(event, 'Home2')}>home2</a></p>
+              <p className={activeLink === 'Home3' ? 'active' : ''}><a href='#home3' onClick={(event) => handleLinkClick(event, 'Home3')}>home3</a></p>
+              <p className={activeLink === 'Home4' ? 'active' : ''}><a href='#home4' onClick={(event) => handleLinkClick(event, 'Home4')}>home4</a></p>
             </div>
-              <div className='cierzo-games__navbar-menu_container-links-sign'>
-                <button type='button'>iniciar sesion</button>
-              </div>
+            <div className='cierzo-games__navbar-menu_container-links-sign'>
+              <button type='button'><VscAccount color="#fff" size={20} /> login</button>
+            </div>
           </div>
         )}
       </div>
