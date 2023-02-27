@@ -41,7 +41,7 @@ const Navbar = () => {
           : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />
         }
         {toggleMenu && (
-          <div className="cierzo-games__navbar-menu_container scale-up-center">
+          <div className="cierzo-games__navbar-menu_container">
             <div className='cierzo-games__navbar-menu_container-links'>
               <p className={activeLink === 'Home' ? 'active' : ''}><a href='#home' onClick={(event) => handleLinkClick(event, 'Home')}>home</a></p>
               <p className={activeLink === 'Home2' ? 'active' : ''}><a href='#home2' onClick={(event) => handleLinkClick(event, 'Home2')}>home2</a></p>
