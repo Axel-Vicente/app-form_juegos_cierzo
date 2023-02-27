@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { Article, Brand, CTA, Feature, Navbar } from "./components";
-import { Blog, Header } from "./containers";
+import { Article, Brand, CTA, Feature, Navbar } from "./pages/blog/components";
 import './App.css'
 
 const App = () => {
@@ -27,7 +26,7 @@ const App = () => {
             <div className={scrolled ? 'gradient__bg scroll__fixed' : 'gradient__bg'}>
                 <Navbar />
             </div>
-            <Header />
+            <Article />
         </div>
     )
 }

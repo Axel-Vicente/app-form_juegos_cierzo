@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import { VscAccount } from "react-icons/vsc";
 import './navbar.css';
-import logo from '../../assets/exampleLogo.jfif'
+import logo from '../../../../assets/exampleLogo.jfif'
 
 function setDocumentTitle(title) {
   document.title = title;
