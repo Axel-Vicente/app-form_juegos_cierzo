@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/app-form_juegos_cierzo/static/css/main.c8769682.css",
-    "main.js": "/app-form_juegos_cierzo/static/js/main.fc7970b1.js",
+    "main.css": "/app-form_juegos_cierzo/static/css/main.a1262f51.css",
+    "main.js": "/app-form_juegos_cierzo/static/js/main.9352f9a5.js",
     "static/media/exampleLogo.jfif": "/app-form_juegos_cierzo/static/media/exampleLogo.cc0adad5906d0a155416.jfif",
     "index.html": "/app-form_juegos_cierzo/index.html",
-    "main.c8769682.css.map": "/app-form_juegos_cierzo/static/css/main.c8769682.css.map",
-    "main.fc7970b1.js.map": "/app-form_juegos_cierzo/static/js/main.fc7970b1.js.map"
+    "main.a1262f51.css.map": "/app-form_juegos_cierzo/static/css/main.a1262f51.css.map",
+    "main.9352f9a5.js.map": "/app-form_juegos_cierzo/static/js/main.9352f9a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8769682.css",
-    "static/js/main.fc7970b1.js"
+    "static/css/main.a1262f51.css",
+    "static/js/main.9352f9a5.js"
   ]
 }
