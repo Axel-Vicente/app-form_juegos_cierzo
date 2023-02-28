@@ -6,24 +6,24 @@ const RRSSIcon = ({ name }) => {
     const InstagramIcon = () => (
         <>
             <li className="icon instagram">
-                <span className="cierzo-games_rrss-text"><a href="#s">{name}</a></span>
-                <FaInstagram />
+                <span className="cierzo-games_rrss-text">{name}</span>
+                <a href="https://www.instagram.com/a.d.cierzolgtb/?hl=es"><FaInstagram /></a>
             </li>
         </>
     )
     const YoutubeIcon = () => (
         <>
             <li className="icon youtube">
-                <span className="cierzo-games_rrss-text"><a href="#s">{name}</a></span>
-                <FaYoutube />
+                <span className="cierzo-games_rrss-text">{name}</span>
+                <a href="https://www.youtube.com/channel/UCL9eGE0PXoJopTshargrLRA"><FaYoutube /></a>
             </li>
         </>
     )
     const FacebookIcon = () => (
         <>
             <li className="icon facebook">
-                <span className="cierzo-games_rrss-text"><a href="#s">{name}</a></span>
-                <FaFacebookF />
+                <span className="cierzo-games_rrss-text">{name}</span>
+                <a href="https://www.facebook.com/adcierzoprolgtb/"><FaFacebookF /></a>
             </li>
         </>
     )

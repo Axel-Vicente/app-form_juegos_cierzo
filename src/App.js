@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
 
-import { Article,  Navbar, RRSSIcon } from "./pages/blog/components";
+import { Article, Navbar, Footer } from "./pages/blog/components";
 import './App.css'
 
-const iconNames = ["Instagram", "Youtube", "Facebook"];
+function setDocumentTitle(title) {
+    document.title = title;
+}
 
 const App = () => {
+    setDocumentTitle('Juegos del cierzo');
     const [scrolled, setScrolled] = useState(false);
+
     useEffect(() => {
         function handleScroll() {
             if (window.scrollY > 0) {
@@ -29,11 +33,7 @@ const App = () => {
                 <Navbar />
             </div>
             <Article />
-            <footer className='wrapper'>
-                {iconNames.map(iconName => (
-                    <RRSSIcon name={iconName} />
-                ))}
-            </footer>
+            <Footer />
         </div>
     )
 }

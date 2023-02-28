@@ -1,0 +1,16 @@
+.cierzo-games_info-text {
+    color: #fff;
+    font-family: var(--font-family);
+    padding: 1rem;
+}
+
+.cierzo-games_info-text_container svg {
+    color: #fff;
+    font-size: 18px;
+}
+
+.cierzo-games_info-text_container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}

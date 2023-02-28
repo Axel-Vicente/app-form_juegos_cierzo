@@ -141,11 +141,19 @@
     .cierzo-games__navbar-menu {
         display: flex;
     }
+
+    .cierzo-games__navbar-menu_container {
+        animation: scale-up-ver-top 0.1s linear 0s 1 normal none;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .cierzo-games__navbar {
         padding: 2rem 4rem;
+    }
+
+    .cierzo-games__navbar-menu_container {
+        animation: scale-up-ver-top 0.1s linear 0s 1 normal none;
     }
 }
 

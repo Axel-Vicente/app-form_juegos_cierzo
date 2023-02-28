@@ -4,12 +4,7 @@ import { VscAccount } from "react-icons/vsc";
 import './navbar.css';
 import logo from '../../../../assets/exampleLogo.jfif'
 
-function setDocumentTitle(title) {
-  document.title = title;
-}
-
 const Navbar = () => {
-  setDocumentTitle('Juegos del cierzo');
 
   const [toggleMenu, setToggleMenu] = useState(false);
   const [activeLink, setActiveLink] = useState('Home');

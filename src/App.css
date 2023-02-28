@@ -9,12 +9,6 @@ body {
     background: var(--color-bg)
 }
 
-footer {
-    background: #000;
-    width: 100%;
-    margin-top: 1rem;
-}
-
 .gradient__bg {
     /* ff 3.6+ */
     background: -moz-linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 129, 0, 1) 15%, rgba(255, 235, 59, 1) 33%, rgba(76, 175, 80, 1) 55%, rgba(63, 81, 181, 1) 77%, rgba(156, 39, 176, 1) 100%);
@@ -49,11 +43,6 @@ footer {
     left: 0;
     z-index: 9999;
     width: 100%;
-}
-
-.wrapper {
-    display: inline-flex;
-    list-style: none;
 }
 
 /* Size for padding and margin on mobile devices or tablets */
