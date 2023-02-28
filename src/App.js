@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-import { Article, Brand, CTA, Feature, Navbar } from "./pages/blog/components";
+import { Article,  Navbar, RRSSIcon } from "./pages/blog/components";
 import './App.css'
+
+const iconNames = ["Instagram", "Youtube", "Facebook"];
 
 const App = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -27,6 +29,11 @@ const App = () => {
                 <Navbar />
             </div>
             <Article />
+            <footer className='wrapper'>
+                {iconNames.map(iconName => (
+                    <RRSSIcon name={iconName} />
+                ))}
+            </footer>
         </div>
     )
 }

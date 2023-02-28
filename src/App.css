@@ -45,12 +45,17 @@ body {
     width: 100%;
 }
 
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+}
+
 /* Size for padding and margin on mobile devices or tablets */
 @media screen and (max-width: 700px) {
     .section__padding {
         padding: 4rem;
     }
-    
+
     .section__margin {
         margin: 4rem;
     }
@@ -60,7 +65,7 @@ body {
     .section__padding {
         padding: 4rem 2rem;
     }
-    
+
     .section__margin {
         margin: 4rem 2rem;
     }
