@@ -1,4 +1,3 @@
-
 footer {
     display: flex;
     flex-direction: column;
@@ -10,15 +9,18 @@ footer {
 footer div .cierzoPetChat {
     display: flex;
     align-items: flex-start;
-    margin-left: 10%;
     background: #111111;
-    width: 20%;
+    width: 200px;
+    height: 180px;
+    margin-right: 50px;
+    margin-left: 3%;
 }
 
 .wrapper {
     display: inline-flex;
+    flex-wrap: wrap;
+    align-content: space-around;
     list-style: none;
-    padding-top: 3rem;
 }
 
 .contact_wrapper {
@@ -26,8 +28,15 @@ footer div .cierzoPetChat {
     align-items: flex-start;
     flex-direction: column;
     padding-top: 1rem;
+    margin-left: 3%;
     list-style: none;
-    margin-left: 10%;
+}
+
+.cierzo-games_container-wrapper {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-top: 3rem;
 }
 
 .cierzo-games_titles {
@@ -38,9 +47,15 @@ footer div .cierzoPetChat {
 }
 
 .cierzo-games_rrss,
-.cierzo-games_links {
+.cierzo-games_links,
+.cierzo-games_contact {
     display: flex;
     flex-direction: column;
+}
+
+.cierzo-games_links,
+.cierzo-games_rrss {
+    margin-left: 15%;
 }
 
 .cierzo-games_rrss-icons {
@@ -49,13 +64,13 @@ footer div .cierzoPetChat {
     margin-top: 25px;
 }
 
-.cierzo-games_links ul{
+.cierzo-games_links ul {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
 }
 
-.cierzo-games_links li{
+.cierzo-games_links li {
     cursor: pointer;
     list-style: none;
     color: #fff;
@@ -63,45 +78,105 @@ footer div .cierzoPetChat {
     padding: 0.3rem;
 }
 
-.cierzo-games_links li:hover{
+.cierzo-games_links li:hover {
     font-weight: 900;
-    text-shadow:0px 5px 10px #71716f;
+    text-shadow: 0px 5px 10px #71716f;
     animation: shake-vertical 1s ease-out 0s 1 normal none;
 }
 
 @keyframes shake-vertical {
-			
+
     0% {
-        transform:translateY(0);
+        transform: translateY(0);
     }
+
     10% {
-        transform:translateY(-3px);
+        transform: translateY(-3px);
     }
+
     20% {
-        transform:translateY(3px);
+        transform: translateY(3px);
     }
+
     30% {
-        transform:translateY(-3px);
+        transform: translateY(-3px);
     }
+
     40% {
-        transform:translateY(3px);
+        transform: translateY(3px);
     }
+
     50% {
-        transform:translateY(-3px);
+        transform: translateY(-3px);
     }
+
     60% {
-        transform:translateY(3px);
+        transform: translateY(3px);
     }
+
     70% {
-        transform:translateY(-3px);
+        transform: translateY(-3px);
     }
+
     80% {
-        transform:translateY(4px);
+        transform: translateY(4px);
     }
+
     90% {
-        transform:translateY(-4px);
+        transform: translateY(-4px);
     }
+
     100% {
-        transform:translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    footer div .cierzoPetChat {
+        width: 150px;
+        height: 130px;
+    }
+
+    .cierzo-games_links,
+    .cierzo-games_rrss {
+        margin-left: 8%;
+    }
+
+    .cierzo-games_contact {
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 828px) {
+    .cierzo-games_links,
+    .cierzo-games_rrss {
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    footer div .cierzoPetChat {
+        display: none;
+    }
+
+    .cierzo-games_links,
+    .cierzo-games_rrss {
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .cierzo-games_container-wrapper {
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+    }
+
+    .cierzo-games_contact {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        align-content: space-around;
+        align-items: center;
+        text-align: center;
     }
 }
