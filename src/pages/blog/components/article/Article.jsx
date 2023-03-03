@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './article.css';
 import inserteImagen from '../../../../assets/mascotaCierzoCabeza.png'
 import cierzoPet from '../../../../assets/mascotaCierzoEntera.png'
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 const Article = () => {
 
@@ -80,7 +81,8 @@ const Article = () => {
             </p>
             <div className='cierzo-games_btn_container'>
               <button onClick={toggleMostrarMas} className='cierzo-games_btn'>
-                {mostrarMas ? 'Leer menos' : 'Leer más'}
+                {mostrarMas ? 'Leer menos ' : 'Leer más '}
+                {mostrarMas ? <FiChevronUp /> : <FiChevronDown />}
               </button>
             </div>
           </div>

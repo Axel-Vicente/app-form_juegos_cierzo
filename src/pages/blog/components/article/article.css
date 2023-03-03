@@ -82,14 +82,13 @@
   background: linear-gradient(to right, #ffa66e 0%, #ff4820 51%, #ffa66e 100%);
   transition: 0.5s;
   background-size: 200% auto;
-  padding: 0.5rem;
+  padding: 0.3rem 0.7rem 0.5rem 0.7rem;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 0;
   outline: none;
   cursor: pointer;
-  text-transform: uppercase;
   font-weight: 500;
   font-size: 12px;
 }
