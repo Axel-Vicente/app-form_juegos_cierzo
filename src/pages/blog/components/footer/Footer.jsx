@@ -1,7 +1,11 @@
 import React from 'react';
 import './footer.css';
 import { RRSSIcon, Copyright, ContactInfo, ContactForm } from "../../components";
-import cierzoPetChat from '../../../../assets/mascotaCierzoChat.png'
+import cierzoPetChat from '../../../../assets/mascotaCierzoChat.png';
+import logoMinis from '../../../../assets/ministerioIgualdadLogo.jpg';
+import logo40th from '../../../../assets/40thlogo.png';
+import logoEquality from '../../../../assets/logopactoestadocolor.png';
+import logoAragonGovernment from '../../../../assets/gobiernoAragonLogo.png';
 
 const iconNames = ["Instagram", "Youtube", "Facebook"];
 const infoElements = ["phone", "email", "entity"];
@@ -35,8 +39,11 @@ const Footer = () => {
               <ContactInfo name={iconName} text={infoElementsText[index]} />
             ))}
           </div>
-          <div className='cierzo-games_logo-aragon'>
-            <p></p>
+          <div className='cierzo-games_logos'>
+            <img src={logoMinis} alt="logo ministerio de igualdad" className='cierzo-games_logo_minis' />
+            <img src={logo40th} alt="logo 40 aniversario" className='cierzo-games_logo_40th' />
+            <img src={logoEquality} alt="logo ministerio igualdad" className='cierzo-games_logo_equality' />
+            <img src={logoAragonGovernment} alt="logo gobierno Aragón" className='cierzo-games_logo_ga' />
           </div>
         </div>
         <div className='cierzo-games_contact'>

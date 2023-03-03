@@ -2,8 +2,9 @@ footer {
     display: flex;
     flex-direction: column;
     background: #111111;
-    width: 100%;
     margin-top: 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 footer div .cierzoPetChat {
@@ -36,7 +37,10 @@ footer div .cierzoPetChat {
     display: inline-flex;
     justify-content: space-evenly;
     flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
     padding-top: 3rem;
+    background: #111111;
 }
 
 .cierzo-games_titles {
@@ -62,6 +66,45 @@ footer div .cierzoPetChat {
     display: flex;
     flex-direction: row;
     margin-top: 25px;
+}
+
+.cierzo-games_logos {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    width: 290px;
+}
+
+.cierzo-games_logo_minis,
+.cierzo-games_logo_40th,
+.cierzo-games_logo_ga {
+    width: 140px;
+    height: 50px;
+    padding: 0.3rem;
+}
+
+.cierzo-games_logo_equality {
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.cierzo-games_logo_minis:hover,
+.cierzo-games_logo_40th:hover,
+.cierzo-games_logo_ga:hover,
+.cierzo-games_logo_equality:hover {
+    background: #71716f;
+    box-shadow: 0px 5px 10px #71716f;
+    border-radius: 10px;
+    animation: fade-in 0.3s linear 0s 1 normal none;
+    transform:scale(1.2);
+}
+
+.cierzo-games_logo_ga {
+    margin-left: 20%;
 }
 
 .cierzo-games_links ul {
@@ -131,6 +174,19 @@ footer div .cierzoPetChat {
     }
 }
 
+@keyframes fade-in {
+
+    0% {
+        transform:scale(1);
+        opacity: 0;
+    }
+
+    100% {
+        transform:scale(1.2);
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width: 1050px) {
     footer div .cierzoPetChat {
         width: 150px;
@@ -145,9 +201,14 @@ footer div .cierzoPetChat {
     .cierzo-games_contact {
         margin-right: 2rem;
     }
+
+    .cierzo-games_logos {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 828px) {
+
     .cierzo-games_links,
     .cierzo-games_rrss {
         margin-left: 3%;
