@@ -71,5 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 # Instalaciones necesarias
-- `react-Icons`
-- `emailjs-com`
+- `npm install --save-dev gh-pages`
+- `npm install react-Icons`
+- `npm install emailjs-com`
+- `npm install react-router-dom`
