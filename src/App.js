@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { Article, Navbar, Footer } from "./pages/blog/components";
+import { Login, Blog } from './pages';
 import './App.css'
 
 function setDocumentTitle(title) {
@@ -9,31 +10,15 @@ function setDocumentTitle(title) {
 
 const App = () => {
     setDocumentTitle('Juegos del cierzo');
-    const [scrolled, setScrolled] = useState(false);
-
-    useEffect(() => {
-        function handleScroll() {
-            if (window.scrollY > 0) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        }
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     return (
         <div className="App">
-            <div className={scrolled ? 'gradient__bg scroll__fixed' : 'gradient__bg'}>
-                <Navbar />
-            </div>
-            <Article />
-            <Footer />
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/app-form_juegos_cierzo/login" element={<Login />} />
+                    <Route path="/app-form_juegos_cierzo" element={<Blog />} />
+                </Routes>
+            </BrowserRouter>
         </div>
     )
 }

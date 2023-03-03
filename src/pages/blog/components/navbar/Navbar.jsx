@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import { VscAccount } from "react-icons/vsc";
 import './navbar.css';
@@ -28,7 +29,9 @@ const Navbar = () => {
         </div>
       </div>
       <div className='cierzo-games__navbar-sign'>
-        <button type='button'><VscAccount color="#fff" size={20} /> login</button>
+        <Link to={"/app-form_juegos_cierzo/login"}>
+          <button type='button' href='../../login/login.js'><VscAccount color="#fff" size={20} /> login</button>
+        </Link>
       </div>
       <div className='cierzo-games__navbar-menu'>
         {toggleMenu
