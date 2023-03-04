@@ -6,7 +6,10 @@
 }
 
 body {
-    background: var(--color-bg)
+    background: var(--color-bg);
+    background-repeat: space;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .gradient__bg {
