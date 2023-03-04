@@ -1,0 +1,106 @@
+.cierzo-games_container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.cierzo-games_article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.cierzo-games_article_subcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 2rem 4rem 4rem 4rem;
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: aparecer;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  border-radius: 20px;
+  background-color: rgba(252, 225, 225, 0.8);
+  opacity: 0.1;
+}
+
+.cierzo-games_article_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.cierzo-games_title {
+  font-family: var(--font-family);
+  color: #000000;
+  text-align: center;
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
+
+.cierzo-games_paragraph {
+  font-family: var(--font-family);
+  color: #000000;
+  text-align: left;
+
+}
+
+.cierzo-games_paragraph_list {
+  font-family: var(--font-family);
+  color: #000000;
+  text-align: left;
+  width: 90%;
+
+}
+
+.cierzo-games_img {
+  width: 300px;
+  height: 300px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.cierzo-games_btn_container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 1rem;
+
+}
+
+.cierzo-games_btn {
+  color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  text-shadow: 1px 1px 3px #666666;
+  background: linear-gradient(to right, #ffa66e 0%, #ff4820 51%, #ffa66e 100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  padding: 0.3rem 0.7rem 0.5rem 0.7rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

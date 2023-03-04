@@ -1,0 +1,74 @@
+.cierzo-games_contact-form-container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-left: 0.2rem;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cierzo-games_contact-form-input,
+.cierzo-games_contact-form-select,
+.cierzo-games_contact-form-textarea {
+    position: relative;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    width: 200px;
+    height: 30px;
+    background: #363636;
+    font-family: var(--font-family);
+    font-weight: 600;
+    border: 0;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.cierzo-games_contact-form-select {
+    height: auto;
+    font-size: 12px;
+    text-align: left;
+}
+.cierzo-games_contact-form-select > option{
+    font-size: 14px;
+}
+
+.cierzo-games_contact-form-textarea {
+    height: 100px;
+}
+
+.cierzo-games_contact-form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 200px;
+    height: 30px;
+    font-family: var(--font-family);
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ffa66e 0%, #ff4820 51%, #ffa66e 100%);
+    background-size: 200% auto;
+    transition: 0.5s;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.cierzo-games_contact-form-button:hover {
+    background-position: right center;
+}
+
+.cierzo-games_contact-form-button:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 1);
+}
+
+.cierzo-games_contact-form-button svg {
+    position: absolute;
+    font-size: 17px;
+    margin-left: 55px;
+    margin-bottom: 4px;
+}

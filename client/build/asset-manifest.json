@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/app-form_juegos_cierzo/static/css/main.f926c8cb.css",
+    "main.js": "/app-form_juegos_cierzo/static/js/main.a461036b.js",
+    "static/media/ministerioIgualdadLogo.jpg": "/app-form_juegos_cierzo/static/media/ministerioIgualdadLogo.1edff1f3a8fd8127ebf4.jpg",
+    "static/media/logopactoestadocolor.png": "/app-form_juegos_cierzo/static/media/logopactoestadocolor.5b24b732112d309f222b.png",
+    "static/media/mascotaCierzoEntera.png": "/app-form_juegos_cierzo/static/media/mascotaCierzoEntera.99d3c961c3c270f5e9a3.png",
+    "static/media/mascotaCierzoChat.png": "/app-form_juegos_cierzo/static/media/mascotaCierzoChat.d2ba072c95935fff2dea.png",
+    "static/media/mascotaCierzoCabeza.png": "/app-form_juegos_cierzo/static/media/mascotaCierzoCabeza.5dd9e24b080469040a5b.png",
+    "static/media/exampleLogo.jfif": "/app-form_juegos_cierzo/static/media/exampleLogo.cc0adad5906d0a155416.jfif",
+    "static/media/gobiernoAragonLogo.png": "/app-form_juegos_cierzo/static/media/gobiernoAragonLogo.8122e9b72691da94d6c7.png",
+    "index.html": "/app-form_juegos_cierzo/index.html",
+    "main.f926c8cb.css.map": "/app-form_juegos_cierzo/static/css/main.f926c8cb.css.map",
+    "main.a461036b.js.map": "/app-form_juegos_cierzo/static/js/main.a461036b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f926c8cb.css",
+    "static/js/main.a461036b.js"
+  ]
+}

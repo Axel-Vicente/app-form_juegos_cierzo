@@ -1,0 +1,243 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background: #111111;
+    margin-top: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer div .cierzoPetChat {
+    display: flex;
+    align-items: flex-start;
+    background: #111111;
+    width: 200px;
+    height: 180px;
+    margin-right: 50px;
+    margin-left: 3%;
+}
+
+.wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    list-style: none;
+}
+
+.contact_wrapper {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 1rem;
+    margin-left: 3%;
+    list-style: none;
+}
+
+.cierzo-games_container-wrapper {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 3rem;
+    background: #111111;
+}
+
+.cierzo-games_titles {
+    color: #fff;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+.cierzo-games_rrss,
+.cierzo-games_links,
+.cierzo-games_contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.cierzo-games_links,
+.cierzo-games_rrss {
+    margin-left: 15%;
+}
+
+.cierzo-games_rrss-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.cierzo-games_logos {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    width: 290px;
+}
+
+.cierzo-games_logo_minis,
+.cierzo-games_logo_40th,
+.cierzo-games_logo_ga {
+    width: 140px;
+    height: 50px;
+    padding: 0.3rem;
+}
+
+.cierzo-games_logo_equality {
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.cierzo-games_logo_minis:hover,
+.cierzo-games_logo_40th:hover,
+.cierzo-games_logo_ga:hover,
+.cierzo-games_logo_equality:hover {
+    background: #71716f;
+    box-shadow: 0px 5px 10px #71716f;
+    border-radius: 10px;
+    animation: fade-in 0.3s linear 0s 1 normal none;
+    transform:scale(1.2);
+}
+
+.cierzo-games_logo_ga {
+    margin-left: 20%;
+}
+
+.cierzo-games_links ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.cierzo-games_links li {
+    cursor: pointer;
+    list-style: none;
+    color: #fff;
+    font-family: var(--font-family);
+    padding: 0.3rem;
+}
+
+.cierzo-games_links li:hover {
+    font-weight: 900;
+    text-shadow: 0px 5px 10px #71716f;
+    animation: shake-vertical 1s ease-out 0s 1 normal none;
+}
+
+@keyframes shake-vertical {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(-3px);
+    }
+
+    20% {
+        transform: translateY(3px);
+    }
+
+    30% {
+        transform: translateY(-3px);
+    }
+
+    40% {
+        transform: translateY(3px);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+
+    60% {
+        transform: translateY(3px);
+    }
+
+    70% {
+        transform: translateY(-3px);
+    }
+
+    80% {
+        transform: translateY(4px);
+    }
+
+    90% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+
+    0% {
+        transform:scale(1);
+        opacity: 0;
+    }
+
+    100% {
+        transform:scale(1.2);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    footer div .cierzoPetChat {
+        width: 150px;
+        height: 130px;
+    }
+
+    .cierzo-games_links,
+    .cierzo-games_rrss {
+        margin-left: 8%;
+    }
+
+    .cierzo-games_contact {
+        margin-right: 2rem;
+    }
+
+    .cierzo-games_logos {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 828px) {
+
+    .cierzo-games_links,
+    .cierzo-games_rrss {
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    footer div .cierzoPetChat {
+        display: none;
+    }
+
+    .cierzo-games_links,
+    .cierzo-games_rrss {
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .cierzo-games_container-wrapper {
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+    }
+
+    .cierzo-games_contact {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        align-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+}
