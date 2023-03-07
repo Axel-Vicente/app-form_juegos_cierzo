@@ -75,8 +75,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - `npm install react-Icons`
 - `npm install emailjs-com`
 - `npm install react-router-dom`
+
+Backend
 - `npm install cors`
 - `npm install mongoose`
 - `npm install mongodb-memory-server`
 - `npm install multer`
 - `npm install nodemon`
+- `npm install morgan`
+- `npm install bcrypt`
+- `npm install jsonwebtoken`
+
+- openSSL
